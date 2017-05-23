@@ -144,7 +144,7 @@ h1 {
   background-color: #788755;
   border-radius: 5px;
   position: absolute;
-  margin-top: 60%;
+  margin-top: 50%;
   width: 50%;
   height: 200px;
   left: 50%;
@@ -154,7 +154,17 @@ h1 {
   transition: width  1.5s;
 }
 .info img{
+  float: left;
   width:150px;
+  margin-left: 8px;
+  border-radius: 5px;
+  border: 2px solid #ebf2dc;
+}
+
+p {
+  padding: 10px;
+  text-align: left;
+  margin-left: 2px;
 }
 
 #deer-info {
