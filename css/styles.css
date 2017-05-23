@@ -1,7 +1,14 @@
 body {
   background-color: #897554;
+  font-family: sans-serif;
 }
 
+h1 {
+  text-align: center;
+  color: #ebf2dc;
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+}
 .map {
   position: relative;
 }
@@ -15,18 +22,17 @@ body {
 
 #deer {
   position: absolute;
-  margin-top: .5%;
+  margin-top: 2%;
   left: 48%;
   margin-right: -50%;
-  width: 7%;
+  width: 5%;
   transition: width  1.5s, transform 2s;
 }
 
 #deer:hover {
-  width: 15%;
-  transform: rotate(360deg);
+  width: 10%;
+  transform: rotate(6deg);
 }
-
 #deer:hover + #deer-info {
   display: block;
 }
@@ -36,6 +42,15 @@ body {
   width: 7%;
   margin-top: 30%;
   left:80%;
+  transition: width  1.5s, transform 2s;
+}
+
+#crab:hover {
+  width: 15%;
+  transform: rotate(6deg);
+}
+#crab:hover + #crab-info {
+  display: block;
 }
 
 
@@ -45,6 +60,15 @@ body {
   margin-top: 20%;
   left: 28%;
   margin-right: -50%;
+  transition: width  1.5s, transform 2s;
+}
+
+#monkey:hover {
+  width: 15%;
+  transform: rotate(6deg);
+}
+#monkey:hover + #monkey-info {
+  display: block;
 }
 
 #ferret {
@@ -53,7 +77,17 @@ body {
   margin-top: 10%;
   left: 18%;
   margin-right: -50%;
+  transition: width  1.5s, transform 2s;
 }
+
+#ferret:hover {
+  width: 15%;
+  transform: rotate(6deg);
+}
+#ferret:hover + #ferret-info {
+  display: block;
+}
+
 
 #lion {
   position: absolute;
@@ -61,6 +95,15 @@ body {
   left: 48%;
   margin-right: -50%;
   width: 7%;
+  transition: width  1.5s, transform 2s;
+}
+
+#lion:hover {
+  width: 15%;
+  transform: rotate(6deg);
+}
+#lion:hover + #lion-info {
+  display: block;
 }
 
 #mole {
@@ -68,6 +111,15 @@ body {
   width: 7%;
   margin-top: 10%;
   left:70%;
+  transition: width  1.5s, transform 2s;
+}
+
+#mole:hover {
+  width: 15%;
+  transform: rotate(6deg);
+}
+#mole:hover + #mole-info {
+  display: block;
 }
 
 #turtle {
@@ -76,13 +128,53 @@ body {
   margin-top: 32%;
   left: 8%;
   margin-right: -50%;
+  transition: width  1.5s, transform 2s;
+}
+
+#turtle:hover {
+  width: 15%;
+  transform: rotate(6deg);
+}
+#turtle:hover + #turtle-info {
+  display: block;
+}
+
+.info{
+  color: #ebf2dc;
+  background-color: #788755;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 60%;
+  width: 50%;
+  height: 200px;
+  left: 50%;
+  margin-right: -50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  transition: width  1.5s;
+}
+.info img{
+  width:150px;
 }
 
 #deer-info {
   display:none;
-  position: absolute;
-  margin-top: 55%;
-  width: 100%;
-  height: 40px;
-  border: 2px solid white;
+}
+#crab-info {
+  display:none;
+}
+#monkey-info{
+  display: none;
+}
+#ferret-info{
+  display: none;
+}
+#lion-info {
+  display: none;
+}
+#mole-info {
+  display: none;
+}
+#turtle-info {
+  display: none;
 }
